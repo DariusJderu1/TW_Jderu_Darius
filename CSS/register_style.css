@@ -1,0 +1,178 @@
+html, body {
+	background: #29353d;
+	color: #ffffff;
+	margin-top: 0;
+	margin-bottom: 60px;
+}
+
+.page {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 10px;
+}
+
+.card {
+	max-width: 600px;
+	width: 100%;
+	padding: 24px;
+	background: #34444f;
+	border: 1px solid #526572;
+	border-radius: 12px;
+	box-sizing: border-box;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	margin: 0 0 24px;
+	text-align: center;
+	font-size: 28px;
+}
+
+.row {
+	margin-bottom: 18px;
+	text-align: left;
+}
+
+.row label {
+	display: block;
+	margin-bottom: 6px;
+	font-weight: 600;
+}
+
+input, select, textarea {
+	width: 100%;
+	border-radius: 6px;
+	border: 1px solid #687e8d;
+	background: #ffffff;
+	color: #202d36;
+	font-size: 16px;
+	box-sizing: border-box;
+	padding: 10px 12px;
+	font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+	outline: 2px solid #8bb8ff;
+	outline-offset: 2px;
+	border-color: #4675bd;
+}
+
+.two-col {
+	display: flex;
+	gap: 12px;
+}
+
+.two-col > div {
+	flex: 1;
+	min-width: 0;
+}
+
+.checkbox-grid {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.actions {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 16px;
+	gap: 12px;
+	flex-wrap: wrap;
+}
+
+.btn {
+	padding: 12px 20px;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.btn.primary {
+	background: #4675bd;
+	color: #ffffff;
+}
+
+.btn.ghost {
+	background: transparent;
+	color: #ffffff;
+	border-color: #8ba0af;
+}
+
+.login-link {
+	margin: 20px 0 0;
+	text-align: center;
+	font-size: 14px;
+}
+
+.login-link a {
+	color: #a9cbff;
+	font-weight: 600;
+	text-underline-offset: 3px;
+}
+
+body {
+	display: block;
+	height: auto;
+}
+
+fieldset.row {
+	min-width: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 12px;
+	border: 1px solid #687e8d;
+	border-radius: 6px;
+}
+
+legend {
+	padding: 0 6px;
+	font-weight: 600;
+}
+
+.radio-group {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.radio-group label, .checkbox-grid label {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-bottom: 0;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	width: auto;
+	margin: 0;
+	accent-color: #4675bd;
+}
+
+textarea {
+	resize: vertical;
+	min-height: 100px;
+}
+
+.btn.primary:hover {
+	background-color: #2f5f9f;
+}
+
+.btn.ghost:hover {
+	background-color: #435966;
+}
+
+.btn:focus-visible, .login-link a:focus-visible {
+	outline: 2px solid #8bb8ff;
+	outline-offset: 3px;
+}
+
+.login-link a:hover {
+	color: #d4e5ff;
+}
