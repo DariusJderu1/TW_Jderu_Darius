@@ -130,3 +130,39 @@ a:focus-visible {
 	outline: 2px solid #8bb8ff;
 	outline-offset: 4px;
 }
+
+@media (max-width: 900px) {
+    main {
+        width: 800px;
+    }
+
+    .columns {
+        justify-content: center; 
+    }
+
+    .column {
+        width: 300px; 
+    }
+}
+
+@media (max-width: 750px) {
+    main {
+        width: 350px;
+        padding: 10px 0;
+    }
+
+    .columns {
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    .column { 
+        width: 100%;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
