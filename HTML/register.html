@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Înregistrare</title>
+		<link rel="stylesheet" href="../CSS/style.css">
+		<link rel="stylesheet" href="../CSS/register_style.css">
+	</head>
+
+	<body>
+		<main class="page">
+			<section class="card">
+				<h1>Creează un cont</h1>
+
+				<form class="register-form" action="#" method="post" enctype="multipart/form-data">
+					<div class="row">
+						<label for="username">Nume de utilizator</label>
+						<input type="text" id="username" name="username" placeholder="ex: dariusTW" autocomplete="username" required>
+					</div>
+
+					<div class="row">
+						<label for="full_name">Nume complet</label>
+						<input type="text" id="full_name" name="full_name" placeholder="ex: Darius Jderu" autocomplete="name" required>
+					</div>
+
+					<div class="row">
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="ex: darius@example.com" autocomplete="email" required>
+					</div>
+
+					<div class="row two-col">
+						<div>
+							<label for="password">Parolă</label>
+							<input type="password" id="password" name="password" autocomplete="new-password" required>
+						</div>
+						<div>
+							<label for="confirm_password">Confirmă parola</label>
+							<input type="password" id="confirm_password" name="confirm_password" autocomplete="new-password" required>
+						</div>
+					</div>
+
+					<div class="row">
+						<label for="birth_date">Data nașterii</label>
+						<input type="date" id="birth_date" name="birth_date" autocomplete="bday" required>
+					</div>
+
+					<fieldset class="row">
+						<legend>Gen</legend>
+						<div class="radio-group">
+							<label for="gender_male"><input type="radio" id="gender_male" name="gender" value="male" required> Masculin</label>
+							<label for="gender_female"><input type="radio" id="gender_female" name="gender" value="female"> Feminin</label>
+							<label for="gender_other"><input type="radio" id="gender_other" name="gender" value="other"> Altul</label>
+						</div>
+					</fieldset>
+
+					<div class="row">
+						<label for="country">Țară</label>
+						<select id="country" name="country" autocomplete="country-name" required>
+							<option value="" disabled selected>Alege țara</option>
+							<option value="Romania">România</option>
+							<option value="Moldova">Republica Moldova</option>
+							<option value="Germany">Germania</option>
+							<option value="France">Franța</option>
+							<option value="Italy">Italia</option>
+							<option value="other">Altă țară</option>
+						</select>
+					</div>
+
+					<fieldset class="row">
+						<legend>Interese și hobby-uri</legend>
+						<div class="checkbox-grid">
+							<label for="hobby_coding"><input type="checkbox" id="hobby_coding" name="hobbies" value="coding"> Programare</label>
+							<label for="hobby_reading"><input type="checkbox" id="hobby_reading" name="hobbies" value="reading"> Lectură</label>
+							<label for="hobby_sports"><input type="checkbox" id="hobby_sports" name="hobbies" value="sports"> Sport</label>
+							<label for="hobby_music"><input type="checkbox" id="hobby_music" name="hobbies" value="music"> Muzică</label>
+						</div>
+					</fieldset>
+
+					<div class="row">
+						<label for="profile_picture">Fotografie de profil</label>
+						<input type="file" id="profile_picture" name="profile_picture" accept="image/*">
+					</div>
+
+					<div class="row">
+						<label for="bio">Despre tine</label>
+						<textarea id="bio" name="bio" rows="4" placeholder="Spune-ne câteva lucruri despre tine..."></textarea>
+					</div>
+
+					<div class="actions">
+						<button type="submit" class="btn primary">Înregistrează-te</button>
+						<button type="reset" class="btn ghost">Resetează</button>
+					</div>
+
+					<p class="login-link">Ai deja cont?
+						<a href="login.html">Mergi la login</a>
+					</p>
+				</form>
+			</section>
+		</main>
+	</body>
+</html>
