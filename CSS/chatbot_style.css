@@ -1,3 +1,11 @@
+.chat-navigation {
+	margin-bottom: 16px;
+}
+
+.chat-navigation a {
+	color: #7fa9ef;
+}
+
 body {
 	background-color: #29353d;
 	display: flex;
