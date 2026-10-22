@@ -131,4 +131,8 @@ main:focus-visible {
     .layout {
         grid-template-columns: 1fr 2fr;
     }
+
+    .sidebar {
+        align-self: stretch;
+    }
 }
