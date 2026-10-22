@@ -26,3 +26,36 @@
 .card-b {
     box-sizing: border-box;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: aliceblue;
+}
+
+.brand {
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    color: darkblue;
+}
+
+.nav-links a:focus-visible {
+    outline: 2px solid darkblue;
+    outline-offset: 4px;
+}
