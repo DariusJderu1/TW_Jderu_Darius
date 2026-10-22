@@ -14,13 +14,26 @@
             <h2 id="step-1-title">Step 1: CSS selectors and declarations</h2>
 
             <p class="important">An important paragraph</p>
-            
+
             <p>
                 The paragraph is dark red because the second .important rule
                 appears later in the stylesheet. Both rules have the same
                 specificity and importance, so the later color declaration wins.
                 The font size and padding from the first rule still apply.
             </p>
+        </section>
+
+        <section aria-labelledby="step-2-title">
+            <h2 id="step-2-title">Step 2: CSS Box Model</h2>
+
+            <div class="card-a">
+                <h3>Card A: content-box</h3>
+                <p>The declared width applies to the content only.</p>
+            </div>
+            <div class="card-b">
+                <h3>Card B: border-box</h3>
+                <p>The declared width includes the content, padding and border.</p>
+            </div>
         </section>
     </main>
 </body>

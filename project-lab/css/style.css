@@ -9,3 +9,20 @@
 .important {
     color: darkred;
 }
+
+.card-a,
+.card-b {
+    width: 240px;
+    padding: 16px;
+    border: 4px solid steelblue;
+    margin-bottom: 16px;
+    background-color: aliceblue;
+}
+
+.card-a {
+    box-sizing: content-box;
+}
+
+.card-b {
+    box-sizing: border-box;
+}
