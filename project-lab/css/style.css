@@ -1,1 +1,11 @@
 /* Shared stylesheet for the Lab 3 exercises. */
+
+.important {
+    color: royalblue;
+    font-size: 20px;
+    padding: 16px;
+}
+
+.important {
+    color: darkred;
+}
