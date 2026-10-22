@@ -59,3 +59,17 @@ nav {
     outline: 2px solid darkblue;
     outline-offset: 4px;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 1rem;
+    max-width: 960px;
+}
+
+.gallery-card {
+    padding: 1rem;
+    border: 1px solid steelblue;
+    background-color: aliceblue;
+    overflow-wrap: anywhere;
+}
