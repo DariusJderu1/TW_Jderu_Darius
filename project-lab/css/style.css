@@ -73,3 +73,62 @@ nav {
     background-color: aliceblue;
     overflow-wrap: anywhere;
 }
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.layout > * {
+    min-width: 0;
+}
+
+.sidebar {
+    padding: 1rem;
+    background-color: aliceblue;
+    align-self: start;
+}
+
+.sidebar ul {
+    padding-left: 1.5rem;
+}
+
+.sidebar li + li {
+    margin-top: 0.75rem;
+}
+
+.sidebar a {
+    color: darkblue;
+}
+
+a:focus-visible,
+main:focus-visible {
+    outline: 2px solid darkblue;
+    outline-offset: 4px;
+}
+
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-150%);
+    padding: 0.75rem;
+    background-color: white;
+    color: darkblue;
+    z-index: 1;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+/* At 768px, there is room for a sidebar and a wider reading area. */
+@media (min-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr 2fr;
+    }
+}
