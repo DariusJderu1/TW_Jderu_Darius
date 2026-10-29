@@ -176,3 +176,19 @@ textarea {
 .login-link a:hover {
 	color: #d4e5ff;
 }
+
+.back-home,
+.back-home:visited {
+	color: #a9cbff;
+	font-weight: 600;
+	text-underline-offset: 3px;
+}
+
+.back-home:hover {
+	color: #d4e5ff;
+}
+
+.back-home:focus-visible {
+	outline: 2px solid #8bb8ff;
+	outline-offset: 3px;
+}
